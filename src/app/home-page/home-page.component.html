@@ -1,0 +1,52 @@
+
+<!--  
+  make space between insta facebook logos
+  make gallery
+  make target-zooming clicking pics
+  links to gallery,
+  build a gallery
+  routings
+  store checkout basket secure payment
+  "Build" - launch website to air.
+  check for a mobile versions.
+  use pics from my folders
+  -->
+  <div class="wrapper">  
+    <div class="middle">
+      <p class="p1">
+        {{ paragraphes[0] }}
+      </p>
+  
+      <div class="img1" onclick="">
+        <img class="pic1" [src]="images[0].url" alt="images[0].imageName" />
+        <p class="sidenote">*"Tanned" version of me.</p>
+      </div>
+  
+      <div class="p2">
+        <p>{{ paragraphes[1] }}</p>
+      </div>
+  
+      <div class="fields" *ngFor="let field of myf">
+        <div class="p3">
+          <div class="p3-titles">
+            {{ field.fieldTitle }}
+          </div>
+          <div class="p3-description">
+            {{ field.description }}
+          </div>
+        </div>
+      </div>
+  
+      <div class="guitar">
+        <img class="pic2" [src]="images[2].url" alt="images[2].imageName" />
+        <p class="undernote">music and hot bevrage for a wonderful weekend</p>
+      </div>
+  
+      <div class="questions">
+        <p>Questions? Say hi!</p>
+      </div>
+  
+      
+    </div>
+  </div>
+  

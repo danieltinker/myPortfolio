@@ -1,0 +1,81 @@
+.gallery {
+      background-color: rgb(46, 46, 44);
+      .gallery__thumb {
+        height: 400px;
+      }
+      .gallery__link {
+        height: 400px;
+      }
+    background-image: exp-gradient(
+      to bottom,
+      rgb(193, 166, 125),
+      rgb(153, 120, 69)
+    );
+    // background-color: rgb(193, 138, 125);
+    // background-image: exp-gradient(to bottom, #050402, rgb(35, 32, 32));
+    display: flex;
+    padding: 0px;
+    transition: 0.3s;
+  
+    &:hover &__image {
+      filter: grayscale(1);
+    }
+  
+    &__column {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+    }
+  
+    &__link {
+      margin: -2px;
+      overflow: hidden;
+  
+      &:hover {
+        .gallery__image {
+          filter: grayscale(0);
+        }
+  
+        .gallery__caption {
+          opacity: 1;
+        }
+      }
+    }
+  
+    &__thumb {
+      position: relative;
+    }
+  
+    &__image {
+      display: block;
+      border: solid rgb(219, 201, 201);
+      // box-shadow: black;
+      width: 100%;
+      transition: 0.3s;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  
+    &__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 25px 15px 15px;
+      width: 100%;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      color: white;
+      opacity: 0;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transition: 0.3s;
+    }
+    // &__caption:hover {
+    // }
+  }
+  

@@ -1,0 +1,209 @@
+// seperate logos, fix alinments,
+// work on hierarichies and efficienty(best practice & cleaner code)
+// couldnt load image from folder (why?)??
+//chaging div height dynamically (parameters in genral).
+.wrapper {
+    $headerHeight: 240px;
+  
+    height: 100%;
+    background-color: #000000;
+    color: #fff;
+  
+    .header {
+  
+      overflow: scroll;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+      padding-top: 40px;
+      height: $headerHeight;
+      // border: solid #fff;
+    }
+  
+    p {
+      // color: rgb(255, 255, 255);
+      font-size: 48px;
+      padding: 104px;
+      padding-bottom: 204px;
+      padding-top: 204px;
+      margin: 0px;
+      float: inline-start;
+      font-family: "Apple SD Gothic Neo";
+    }
+    .fields {
+      padding: 108px;
+    }
+    .p3 {
+      display: flex;
+      padding: auto;
+    }
+    .p3-titles {
+      font-size: 50px;
+      height: 100px;
+      width: 500px;
+      padding-left: 104px;
+      padding-right: 104px;
+    }
+    .sidenote {
+      font-size: 20px;
+      margin: 0px;
+      padding: 20px;
+    }
+    .cellphone {
+      color: #fff;
+      background-color: rgb(0, 0, 0);
+    }
+    .p3-description {
+      display: flex;
+      font-size: 28px;
+      margin: 0px;
+      padding-bottom: 200px;
+      height: 100px;
+      width: 450px;
+      border: 0px;
+      box-sizing: content-box;
+    }
+
+    .img1 {
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      padding-left: 104px;
+      padding-top: 104px;
+      padding-bottom: 104px;
+      .pic1 {
+        height: 480px;
+        width: 480px;
+        size: 0px;
+        border: 1px solid #fff;
+        margin: 1px;
+      }
+      .pic1:hover {
+        height: 780px;
+        width: 780px;
+      }
+    }
+    .guitar {
+      width: 100%;
+      text-align: center;
+      .undernote {
+        text-align: left;
+        position: absolute;
+        margin: 0px;
+        height: 20px;
+        padding-top: 20px;
+        padding: 0px;
+        padding-left: 350px;
+        font-size: 20px;
+      }
+    }
+  
+    .questions {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      font-size: 30px;
+      color: white;
+      .a {
+        padding: 0px;
+      }
+    }
+  
+    
+  }
+
+
+@media only screen and (max-width: 600px) {
+  .wrapper{
+
+    
+    p {
+      color: rgb(247, 247, 247);
+      font-size: 20px;
+      padding: 50px;
+      padding-bottom: 204px;
+      padding-top: 204px;
+      margin: 0px;
+      float: inline-start;
+      font-family: "Apple SD Gothic Neo";
+    }
+
+    
+    .img1 {
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      padding-left: 20px;
+      padding-top: 50px;
+      padding-bottom: 104px;
+      .pic1 {
+        height: 280px;
+        width: 280px;
+        size: 0px;
+        border: 1px solid #fff;
+        margin: 1px;
+      }
+      // .pic1:hover {
+      //   height: 780px;
+      //   width: 780px;
+      // }
+    }
+
+    .pic2 {
+      height: 280px;
+      width: 240px;
+      size: 0px;
+      border: 1px solid #fff;
+      margin: 1px;
+    }
+    .fields {
+      padding: 20px;
+    }
+
+    .p3-titles {
+      font-size: 28px;
+      height: 100px;
+      width: 500px;
+      padding-left: 0px;
+      padding-right: 22px;
+    }
+    .sidenote {
+      font-size: 20px;
+      margin: 0px;
+      padding: 20px;
+    }
+    .cellphone {
+      color: #fff;
+      background-color: rgb(0, 0, 0);
+    }
+    .p3-description {
+      display: flex;
+      font-size: 12px;
+      margin: 0px;
+      padding-bottom: 200px;
+      height: 100px;
+      width: 450px;
+      border: 0px;
+      box-sizing: content-box;
+    }
+    }
+
+    .guitar {
+      // width: 100%;
+      height: 280px;
+      width: 280px;
+      text-align: center;
+      .undernote {
+        text-align: left;
+        position: absolute;
+        margin: 0px;
+        height: 20px;
+        padding-top: 20px;
+        padding: 0px;
+        padding-left: 350px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  
